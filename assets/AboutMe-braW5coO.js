@@ -1,1 +1,0 @@
-import{_ as e}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{c as o,o as c}from"./index-DGVGAhhr.js";const r={};function t(n,s){return c(),o("h3",null,"介紹我自己")}const f=e(r,[["render",t]]);export{f as default};
