@@ -1,12 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes: [
-    {
-      path: "/",
-      redirect: "/crazypanda/home",
-    },
     {
       path: "/test",
       name: "Test",
@@ -14,8 +10,7 @@ const router = createRouter({
     },
     {
       path: "/crazypanda",
-      name: "Panda",
-      redirect: "/crazypanda/home",
+      redirect: { name: "Home" },
       component: () => import("../layout/MainLayout.vue"),
       children: [
         {
